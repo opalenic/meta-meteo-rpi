@@ -1,0 +1,3 @@
+METEO_FETCHER_TASK_RATE_SECS=60
+DATABASE_URL=/var/lib/ratfist-server/ratfist.db
+I2C_BUS_0_PATH=/dev/i2c-dev-1

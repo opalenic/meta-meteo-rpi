@@ -1,0 +1,9 @@
+[Unit]
+Description=Startup script for ratfist-server
+
+[Service]
+WorkingDirectory=/var/lib/ratfist-server
+ExecStart=/usr/bin/ratfist-server
+
+[Install]
+WantedBy=multi-user.target
