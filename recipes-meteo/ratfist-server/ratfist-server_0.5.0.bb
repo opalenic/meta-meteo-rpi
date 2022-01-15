@@ -7,11 +7,11 @@ inherit cargo
 
 # how to get ratfist-server could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/ratfist-server/0.5.0"
-SRC_URI += "git://git@github.com/opalenic/ratfist-server.git;protocol=ssh;nobranch=1"
-SRCREV = "0f298ed1c9257aa7fecb7a7fba239c653c8bd58e"
+SRC_URI += "git://git@github.com/mour/ratfist-server.git;protocol=ssh;nobranch=1"
+SRCREV = "3fe3c9c658112b4367c788028ec42d946ff5ddd7"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = "server"
-PV:append = ".AUTOINC+0f298ed1c9"
+PV:append = ".AUTOINC+3fe3c9c658"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -279,7 +279,7 @@ SRC_URI += " \
 
 # FIXME: update generateme with the real MD5 of the license file
 LIC_FILES_CHKSUM = " \
-    file://MIT;md5=generateme \
+    file://LICENSE;md5=2940970beed378141a53f372401a35ab \
 "
 
 SUMMARY = "HTTP server providing a REST API to various sensors connected by UART or I2C"
